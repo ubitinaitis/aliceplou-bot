@@ -16,7 +16,7 @@ auth = tweepy.OAuthHandler(api_key, api_secret_key)
 auth.set_access_token(access_key, access_secret_key)
 api = tweepy.API(auth)
 
-lyrics = open("C:/Users/bitin/OneDrive/Desktop/bot/lyrics.txt", "r", encoding='utf-8')
+lyrics = open("lyrics.txt", "r", encoding='utf-8')
 
 lines = lyrics.read().splitlines()
 
