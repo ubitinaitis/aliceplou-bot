@@ -23,6 +23,6 @@ lines = lyrics.read().splitlines()
 while True:
     random_line = random.choice(lines)
     if len(random_line) <= 280: # in case a lyric is too long...
-        tweet_text = random_line.replace(b"|", b'\n').lower() # |'s are now linebreaks. lowercases it too
+        tweet_text = random_line.replace("|", '\n').lower() # |'s are now linebreaks. lowercases it too
         api.update_status(status=tweet_text) # actually tweets!
         time.sleep(60*60) # waits 60 min
